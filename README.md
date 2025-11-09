@@ -1,0 +1,4 @@
+Jag har valt att göra en hemsida om mat som jag själv har lagat och tagit egna bilder, då jag har allt matrial själv tänkte jag att det skulle vara smidigast samt någfot som jag älskar. 
+Jag har gjort en simpel leyout som är tydlig och vissar upp mina bilder med förklaringar till hur jag gjort det. Dom färjerna som jag valde är råsa/röd eftersom jag tycker det passar bra in med at temat och ger en glas och varm känsla.
+När jag gjorde ett test på lighthouse så fick jag betygen 75 97 100 91 och insåg att mina bilder är större än vad dom behöver vara så det är något jag ska ändra och tänka på i fram tiden.
+Det har ävrn varit lite svårt med flex box för att optimera på bästa sätt näör man scalar upp och ner. Måste prioritera mobil firt ännu mer!
