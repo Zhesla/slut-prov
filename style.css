@@ -36,8 +36,11 @@
 
 header, main, footer {
     position: relative;
+
     z-index: 1;
 }
+
+
 
 .ball {
   position: absolute;
@@ -224,6 +227,8 @@ main {
     background-color: var(--color-1);
     border-radius: 1em;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 0;
 }
 .main-flex {
     display: flex;  
@@ -306,7 +311,7 @@ footer {
         display: none;
         flex-direction: column;
         background: var(--background-color, #fff);
-        position: sticky;
+        position: absolute;
         top: 60px;
         left: 60%;
         width: 30%;
@@ -315,6 +320,7 @@ footer {
         align-items: center;
         text-align: center;
         border-radius: 1;
+
     }
     .menu-toggle:checked + .hamburger + nav ul {
         display: flex;
@@ -327,7 +333,8 @@ footer {
 
     }
     nav {
-        position: sticky;
+        position: absolute;
+        z-index: 10000;
 
     }
 }
