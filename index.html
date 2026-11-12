@@ -1,74 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hem</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="background">
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-</div>
-    <header>
-        <h1 class="blogg-heading">Christinas matblogg 𓌉◯𓇋</h1>
-        <nav>
-            <ul>
-                <li><a href="#home"><b>Vi som älskar mat!</b></a></li>
-                <li><a href="varfor-just-mat.html">Varför just mat?</a></li>
-                <li><a href="#services">Min mat</a></li>
-                <li><a href="#contact">Kontakt info</a></li>
-            </ul>
-        </nav>
-        <div class="flex-container">
-            <img height="400px" width="500px" src="https://res.cloudinary.com/dwnckw2w6/image/upload/v1760725640/IMG_6589_nnskvy.jpg" alt="Mat bild">
-            <div class="text-container">
-                <h1>Välkommen till min mat blogg!</h1>
-                <p>Här delar jag med mig av mina bästa recept och matlagningstips. Oavsett om du är nybörjare i köket eller en erfaren kock, finns det något för alla att upptäcka och njuta av. Följ med mig på en kulinarisk resa fylld med smakrika rätter och inspirerande idéer!</p>
-                <a href="#services" class="cta-button primary"><b>Min mat</b></a>
-                <a href="varfor-just-mat.html" class="cta-button secondary"><b>Varför just mat?</b></a>
-        </div>
-    </header>
-    <main>
-        <section id="services">
-            <div class="main-flex">
-                <div class="main-text">
-                    <h3>Det bästa jag vet är att göra kött och jag har gjort många rätter för att få till det rätt! </h3>
-                    <p>Här är har vi en entrecot med bakpotatis och rödvinsås. Jag har haft ost och bacom ovan på potatisen för att lyxa till och få en roligare smak. La även till lite smör och vitlöksstekt broccoli för att ha litte grönt till. Rödvinssåsen är en vanlig klassisk med schalottenlök, smör, oxfond och socker.</p>
-                </div>
-                  <div class="flex-container">
-                   <img height="500px" width="400px" src="https://res.cloudinary.com/dwnckw2w6/image/upload/v1760725640/IMG_6595_h2ufke.jpg" alt="Mat bild">
-                    </div>
-                    </div>
-                        <br>
-                        <br>
-                      <h3>Det bästa jag vet är att göra kött och jag har gjort många rätter för att få till det rätt! </h3>
-                   <div class="main-flex">
-                  <div class="main-text">
-                <p>Här är har vi en entrecot med bakpotatis och rödvinsås. Jag har haft ost och bacom ovan på potatisen för att lyxa till och få en roligare smak. La även till lite smör och vitlöksstekt broccoli för att ha litte grönt till. Rödvinssåsen är en vanlig klassisk med schalottenlök, smör, oxfond och socker.</p>
-              </div>
-              <div class="flex-container"> 
-                <img height="500px" width="400px" src="https://res.cloudinary.com/dwnckw2w6/image/upload/v1760725483/IMG_5482_yinzov.jpg" alt="Mat bild">
-                </div> 
-    </div>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Christinas matblogg. Mat jag lagat och fotat själv, med förklaringar till hur jag gjort."
+    />
+    <title>Christinas matblogg</title>
 
-        </section>
-    </main>
-    <footer>
-        <section id="contact">
-            <h2>Kontakt info</h2>
-            <p>Email: Christinapeura@hotmail.se</p>
-            <p>Telefon: 073-1234567</p>
-        </section>
-        </footer>
     
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Limelight&display=swap"
+    />
+    <link rel="preconnect" href="https://res.cloudinary.com" />
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <script src="menu.js" defer></script>
+  </head>
+  <body>
+   
+    <div class="background" aria-hidden="true">
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+    </div>
+
+    <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+
+    <header class="site-header">
+      <a class="logo" href="index.html"
+        >Christinas matblogg <span aria-hidden="true">𓌉◯𓇋</span></a
+      >
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="huvudmeny"
+      >
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Meny</span>
+      </button>
+
+      <nav class="site-nav" id="huvudmeny" aria-label="Huvudmeny">
+        <ul>
+          <li><a href="index.html" aria-current="page">Hem</a></li>
+          <li><a href="varfor-just-mat.html">Varför just mat?</a></li>
+          <li><a href="index.html#min-mat">Min mat</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="innehall">
+      <section class="card hero">
+        <img
+          src="https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_5:4,g_auto,f_auto,q_auto,w_800/v1760725640/IMG_6589_nnskvy.jpg"
+          srcset="
+            https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_5:4,g_auto,f_auto,q_auto,w_480/v1760725640/IMG_6589_nnskvy.jpg   480w,
+            https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_5:4,g_auto,f_auto,q_auto,w_800/v1760725640/IMG_6589_nnskvy.jpg   800w,
+            https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_5:4,g_auto,f_auto,q_auto,w_1200/v1760725640/IMG_6589_nnskvy.jpg 1200w
+          "
+          sizes="(min-width: 900px) 500px, 100vw"
+          width="500"
+          height="400"
+          fetchpriority="high"
+          alt="TODO: beskriv vad som syns på bilden"
+        />
+        <div class="hero-text">
+          <h1>Välkommen till min matblogg!</h1>
+          <p>
+            Här delar jag med mig av mina bästa recept och matlagningstips.
+            Oavsett om du är nybörjare i köket eller en erfaren kock, finns det
+            något för alla att upptäcka och njuta av. Följ med mig på en
+            kulinarisk resa fylld med smakrika rätter och inspirerande idéer!
+          </p>
+          <div class="buttons">
+            <a href="#min-mat" class="cta-button primary">Min mat</a>
+            <a href="varfor-just-mat.html" class="cta-button secondary"
+              >Varför just mat?</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="min-mat" aria-labelledby="min-mat-rubrik">
+        <h2 id="min-mat-rubrik">Min mat</h2>
+
+        <article class="dish">
+          <div class="dish-text">
+            <h3>Entrecôte med bakpotatis och rödvinssås</h3>
+            <p>
+              Det bästa jag vet är att laga kött, och jag har gjort många rätter
+              för att få till det rätt! Här har vi en entrecôte med bakpotatis
+              och rödvinssås. Jag har haft ost och bacon ovanpå potatisen för
+              att lyxa till och få en roligare smak. La även till lite smör- och
+              vitlöksstekt broccoli för att ha lite grönt till. Rödvinssåsen är
+              en vanlig klassisk med schalottenlök, smör, oxfond och socker.
+            </p>
+          </div>
+          <img
+            src="https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_4:5,g_auto,f_auto,q_auto,w_800/v1760725640/IMG_6595_h2ufke.jpg"
+            srcset="
+              https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_4:5,g_auto,f_auto,q_auto,w_480/v1760725640/IMG_6595_h2ufke.jpg 480w,
+              https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_4:5,g_auto,f_auto,q_auto,w_800/v1760725640/IMG_6595_h2ufke.jpg 800w
+            "
+            sizes="(min-width: 900px) 400px, 100vw"
+            width="400"
+            height="500"
+            loading="lazy"
+            alt="Entrecôte med bakpotatis toppad med ost och bacon, rödvinssås och broccoli"
+          />
+        </article>
+
+        <article class="dish">
+          <div class="dish-text">
+            <h3>
+              Cowboy butter steak bites med krämigt potatismos och
+              karamelliserad lök
+            </h3>
+            <p>
+              Möra steak bites på en bädd av hemgjort potatismos, med
+              karamelliserad lök och cowboy butter ovanpå. Smöret smälter ner i
+              moset och blir en sås i sig. Toppat med färska örter för lite
+              friskhet.
+            </p>
+          </div>
+          <img
+            src="https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_4:5,g_auto,f_auto,q_auto,w_800/v1760725483/IMG_5482_yinzov.jpg"
+            srcset="
+              https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_4:5,g_auto,f_auto,q_auto,w_480/v1760725483/IMG_5482_yinzov.jpg 480w,
+              https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_4:5,g_auto,f_auto,q_auto,w_800/v1760725483/IMG_5482_yinzov.jpg 800w
+            "
+            sizes="(min-width: 900px) 400px, 100vw"
+            width="400"
+            height="500"
+            loading="lazy"
+            alt="Steak bites på potatismos med karamelliserad lök, cowboy butter och hackad gräslök"
+          />
+        </article>
+      </section>
+    </main>
+
+    <footer class="card site-footer" id="kontakt">
+      <h2>Kontakt</h2>
+      <p>
+        Hör gärna av dig på
+        <a
+          href="https://www.linkedin.com/in/christina-peura/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>

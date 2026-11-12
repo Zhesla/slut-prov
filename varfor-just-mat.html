@@ -1,61 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Varför jag älskar att laga mat och vad som är min största inspiration."
+    />
+    <title>Varför just mat? | Christinas matblogg</title>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Varför just mat?</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Limelight&display=swap"
+    />
+    <link rel="preconnect" href="https://res.cloudinary.com" />
 
-<body>
-  <div class="background">
-    <span class="ball"></span><span class="ball"></span><span class="ball"></span><span class="ball"></span><span class="ball"></span><span class="ball"></span>
-  </div>
+    <link rel="stylesheet" href="style.css" />
+   
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <script src="menu.js" defer></script>
+  </head>
+  <body>
+    <div class="background" aria-hidden="true">
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+      <span class="ball"></span>
+    </div>
 
-  <header>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-    <label for="menu-toggle" class="hamburger">&#9776;</label>
-    <nav>
-      <ul>
-        <li><a href="index.html">Vi som älskar mat!</a></li>
-        <li><a href="varfor-just-mat.html">Varför just mat?</a></li>
-        <li><a href="#services">Min mat</a></li>
-        <li><a href="#contact">Kontakt info</a></li>
-      </ul>
-     </nav>
-    <h1>Varför just mat?</h1>
-  </header>
+    <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
 
-  <main>
-    <section id="info">
-      <div class="flex-container">
-        <img class="fixed-box" src="https://res.cloudinary.com/dwnckw2w6/image/upload/v1760725640/IMG_6595_h2ufke.jpg" alt="Mat bild">
-        <div>
-          <h3>Min största inspiration</h3>
-          <p>Mat är något jag älskat sen tidig ålder och det finns oändligt med inspiration.</p>
-          <p>Jag älskar att laga mat och experimentera med olika smaker och ingredienser. Matlagning är för mig en kreativ process där jag kan uttrycka mig själv och skapa något unikt. Jag tycker också om att dela mina recept och matlagningsupplevelser med andra, eftersom jag tror att mat har en fantastisk förmåga att föra människor samman och skapa gemenskap.</p>
-        </div>
-      </div>
-    </section>
+    <header class="site-header">
+      <a class="logo" href="index.html"
+        >Christinas matblogg <span aria-hidden="true">𓌉◯𓇋</span></a
+      >
 
-    <section id="services">
-      <div class="main-flex">
-        <div class="main-text">
-          <h3>Mat är något jag älskat sen tidig ålder</h3>
-          <p>Jag älskar att laga mat och experimentera med olika smaker och ingredienser. Matlagning är för mig en kreativ process där jag kan uttrycka mig själv och skapa något unikt.</p>
-        <img height="500" width="400" src="https://res.cloudinary.com/dwnckw2w6/image/upload/v1760725483/IMG_6029_bcvnio.jpg" alt="Mat bild">
-        </div>
-      </div>
-    </section>
-  </main>
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="huvudmeny"
+      >
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Meny</span>
+      </button>
 
-  <footer>
-    <section id="contact">
-      <h2>Kontakt info</h2>
-      <p>Email: Christinapeura@hotmail.se</p>
-    </section>
-  </footer>
-</body>
+      <nav class="site-nav" id="huvudmeny" aria-label="Huvudmeny">
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li>
+            <a href="varfor-just-mat.html" aria-current="page"
+              >Varför just mat?</a
+            >
+          </li>
+          <li><a href="index.html#min-mat">Min mat</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main id="innehall">
+      <section class="card">
+        <h1>Varför just mat?</h1>
+        <img
+          class="banner"
+          src="https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_3:1,g_auto,f_auto,q_auto,w_1200/v1760725640/IMG_6595_h2ufke.jpg"
+          srcset="
+            https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_3:1,g_auto,f_auto,q_auto,w_600/v1760725640/IMG_6595_h2ufke.jpg   600w,
+            https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_3:1,g_auto,f_auto,q_auto,w_1200/v1760725640/IMG_6595_h2ufke.jpg 1200w,
+            https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_3:1,g_auto,f_auto,q_auto,w_1800/v1760725640/IMG_6595_h2ufke.jpg 1800w
+          "
+          sizes="(min-width: 1100px) 1050px, 100vw"
+          width="1200"
+          height="400"
+          fetchpriority="high"
+          alt="Entrecôte med bakpotatis och rödvinssås"
+        />
+
+        <h2>Min största inspiration</h2>
+        <p>
+          Mat är något jag älskat sedan tidig ålder och det finns oändligt med
+          inspiration.
+        </p>
+        <p>
+          Jag älskar att laga mat och experimentera med olika smaker och
+          ingredienser. Matlagning är för mig en kreativ process där jag kan
+          uttrycka mig själv och skapa något unikt. Jag tycker också om att dela
+          mina recept och matlagningsupplevelser med andra, eftersom jag tror
+          att mat har en fantastisk förmåga att föra människor samman och skapa
+          gemenskap.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="tidig-alder">
+        <article class="dish">
+          <div class="dish-text">
+            <h2 id="tidig-alder">Mat är något jag älskat sedan tidig ålder</h2>
+            <p>
+              Jag älskar att laga mat och experimentera med olika smaker och
+              ingredienser. Matlagning är för mig en kreativ process där jag kan
+              uttrycka mig själv och skapa något unikt.
+            </p>
+          </div>
+          <img
+            src="https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_4:5,g_auto,f_auto,q_auto,w_800/v1760725483/IMG_6029_bcvnio.jpg"
+            srcset="
+              https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_4:5,g_auto,f_auto,q_auto,w_480/v1760725483/IMG_6029_bcvnio.jpg 480w,
+              https://res.cloudinary.com/dwnckw2w6/image/upload/c_fill,ar_4:5,g_auto,f_auto,q_auto,w_800/v1760725483/IMG_6029_bcvnio.jpg 800w
+            "
+            sizes="(min-width: 900px) 400px, 100vw"
+            width="400"
+            height="500"
+            loading="lazy"
+            alt="TODO: beskriv vad som syns på bilden"
+          />
+        </article>
+      </section>
+    </main>
+
+    <footer class="card site-footer" id="kontakt">
+      <p>
+        Hör gärna av dig på
+        <a
+          href="https://www.linkedin.com/in/christina-peura/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
